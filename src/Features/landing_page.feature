@@ -12,21 +12,18 @@ Scenario: Sign in from Tittle button
     When I click on the "Sign in" button on the home
     And I am redirected to "https://admin.getlobee.com/"
     And the focus is on the "Email" field 
-   #aca deberia ser "Hosted Name"
 
 Scenario: Sign in from bottom button
     Given I navigate to "https://getlobee.com/"
     When I click on the "Try it out! It's free!" button
     And I am redirected to "https://admin.getlobee.com/"
     And the focus is on the "Email" field 
-    #aca deberia ser "Hosted Name"
 
 Scenario: Sign in from top bar button
    Given I navigate to "https://getlobee.com/"
    When I click on the "Sign in" button on the header
    And I am redirected to "https://admin.getlobee.com/"
    And the focus is on the "Email" field 
-    #aca deberia ser "Hosted Name"
 
 Scenario: log in from top bar button
    Given I navigate to "https://getlobee.com/"

@@ -1,12 +1,12 @@
 Feature: Validate that a user can sign in to the app
 
-#Scenario: Successfully sign in to the app
-#    Given I navigate to "https://admin.getlobee.com/"
-#    When I enter "Automated Test Hostel" on the "Hostel Name" field on the Sign in side
-#    When I enter "andresepalacio+atc@gmail.com" on the "Email" field on the Sign in side
-#    And I enter "123123" on the "Password" field on the Sign in side
-#    And I enter "123123" on the "Repeat password" field on the Sign in side
-#    And I click on the "Create Account" button
+Scenario: Successfully sign in to the app
+    Given I navigate to "https://admin.getlobee.com/"
+    When I enter "Automated Test Hostel" on the "Hostel Name" field on the Sign in side
+    When I enter "andresepalacio+atc@gmail.com" on the "Email" field on the Sign in side
+    And I enter "123123" on the "Password" field on the Sign in side
+    And I enter "123123" on the "Repeat password" field on the Sign in side
+    And I click on the "Create Account" button
 
 
 Scenario Outline: Error trying to Sign in with invalid Data
@@ -28,9 +28,6 @@ Examples:
 | Duplicated Email        | "ATC Hostel"  | "andresepalacio+admin@gmail.com" | "123123" | "123123"  | "This email was already registerd. Please log-in, or get in contact with us by sending an email to contact@getlobee.com" |
 # duplicated Hostel Name?
 # password too weak?
-
-
-
 
 Scenario: Check Terms of Use link
     Given I navigate to "https://admin.getlobee.com/"

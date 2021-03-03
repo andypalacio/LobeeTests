@@ -8,7 +8,6 @@ Scenario: login as an admin
     When I enter "andresepalacio+admin@gmail.com" on the "Email" field on the login side
     And I enter "123123" on the "Password" field on the login side
     And I click on the "Login" button on the login side
-    #"on the login page" no va hay que eliminarlo cuando se corrija el comentario C00001 en login_page.ts
     Then I am successfully logged in
 
 
